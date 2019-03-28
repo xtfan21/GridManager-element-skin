@@ -2,30 +2,30 @@ import gridManager from 'gridmanager-angular-1.x';
 import '../js/index.js';
 var app = angular.module("myApp", [gridManager]);
 app.controller('AppController', ['$window', '$rootScope', '$scope', '$element', '$gridManager', function($window, $rootScope, $scope, $element, $gridManager) {
-    // $scope.table = $element[0].querySelector('table[grid-manager="gridManager-ccms-skin"]');
+    // $scope.table = $element[0].querySelector('table[grid-manager="gridManager-element-skin"]');
     $scope.testClick = (row) => {
         console.log('click', row);
     };
     $scope.disableConfig = function() {
         console.log($scope);
-        $gridManager.setConfigVisible('gridManager-ccms-skin');
+        $gridManager.setConfigVisible('gridManager-element-skin');
     };
     $scope.deleteRowData = function(row) {
         if(window.confirm('确认要删除['+row.info+']?')){
             console.log('----删除操作开始----');
-            $gridManager.refreshGrid('gridManager-ccms-skin');
+            $gridManager.refreshGrid('gridManager-element-skin');
             console.log('数据没变是正常的, 因为这只是个示例,并不会真实删除数据.');
             console.log('----删除操作完成----');
         }
     };
     $scope.showTh = function() {
         const dom = document.querySelectorAll('.th-wrap');
-        $gridManager.showTh('gridManager-ccms-skin', dom);
+        $gridManager.showTh('gridManager-element-skin', dom);
 
     };
     $scope.hideTh = function() {
         const dom = document.querySelectorAll('.th-wrap');
-        $gridManager.hideTh('gridManager-ccms-skin',dom);
+        $gridManager.hideTh('gridManager-element-skin',dom);
 
     };
     // 常量: 搜索条件
@@ -39,7 +39,7 @@ app.controller('AppController', ['$window', '$rootScope', '$scope', '$element', 
         '7': '前端相关'
     };
     $scope.option = {
-        gridManagerName: 'gridManager-ccms-skin',
+        gridManagerName: 'gridManager-element-skin',
         width: '100%',
         height: '100%',
         dataKey: 'data',
