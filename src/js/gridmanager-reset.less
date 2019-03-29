@@ -26,6 +26,29 @@
                 color: #606266;
                 -webkit-font-smoothing: antialiased;
             }
+            .init-msg {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%,-50%);
+                .warning {
+                    height: 40px;
+                    display: inline-block;
+                    > svg {
+                        fill: #ddd;
+                        height: 40px;
+                        width: 40px
+                    }
+                }
+                .msg {
+                    height: 40px;
+                    font-size: 14px;
+                    margin-left: 15px;
+                    color: #999;
+                    vertical-align: 15px;
+                    display: inline-block;
+                }
+            }
         }
     }
 
