@@ -1,11 +1,9 @@
 const path = require('path');
 const genRules = require('./webpack-common.loader');
+
 const buildPath = path.join(__dirname, '/');
 const config = {
     mode: 'development',
-
-    // map
-    //  http://www.css88.com/doc/webpack2/configuration/devtool/
     devtool: 'cheap-eval-source-map',
 
 	// 入口文件配置

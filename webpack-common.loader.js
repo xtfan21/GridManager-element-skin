@@ -1,7 +1,7 @@
 const path = require('path');
 
 module.exports = (srcCodeDir, idDev) => {
-	return [
+    return [
         {
             test: /\.js$/,
             exclude: /node_modules/,
@@ -32,6 +32,7 @@ module.exports = (srcCodeDir, idDev) => {
                         sourceMap: false // 启用/禁用 Sourcemaps
                     }
                 },
+
                 {
                     loader: 'resolve-url-loader'
                 },
@@ -41,7 +42,10 @@ module.exports = (srcCodeDir, idDev) => {
                         sourceMap: false // 启用/禁用 Sourcemaps
                     }
                 }
-            ]
+            ],
 		}
 	]
 };
+
+
+

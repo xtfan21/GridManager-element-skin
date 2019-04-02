@@ -43,11 +43,14 @@ const config = {
 	plugins: [
 		// 删除dist目录
 		new CleanWebpackPlugin(),
+
+
 		// 将文件复制到构建目录
 		// CopyWebpackPlugin-> https://github.com/webpack-contrib/copy-webpack-plugin
 		new CopyWebpackPlugin([
-			{from: path.join(__dirname, '/package.json'), to: '', toType: 'file'}
-		])
+			{from: path.join(__dirname, '/package.json'), to: '', toType: 'file'},
+            {from: path.join(__dirname, '/README.md'), to: '', toType: 'file'}
+        ])
 	],
 
 	// 处理项目中的不同类型的模块。
