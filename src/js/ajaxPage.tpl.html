@@ -1,0 +1,43 @@
+<script src="index.js"></script>
+<div class="footer-toolbar">
+    <!--选中信息-->
+    <div class="toolbar-info checked-info"></div>
+
+    <!--分页切换-->
+    <div class="ajax-page">
+
+        <span class="totals-count">
+            共&nbsp;<span totals-number-info></span>&nbsp;条
+        </span>
+
+        <!--每页显示条数-->
+        <div class="change-size">
+            <select name="pSizeArea">
+                {{ vm.pageSizeOptionTpl }}
+            </select>
+        </div>
+
+        <!--上一页-->
+        <ul class="pagination" pagination-before>
+            <li class="previous-page">
+                &lt;
+            </li>
+        </ul>
+        <!--页码区-->
+        <ul class="pagination" pagination-number></ul>
+        <!--下一页-->
+        <ul class="pagination" pagination-after>
+            <li class="next-page">
+                &gt;
+            </li>
+        </ul>
+    </div>
+
+    <!--跳转至-->
+    <div class="goto-page">
+        前往
+        <input type="text" class="gp-input" current-page-info/>
+        {{ vm.gotoLastText }}
+    </div>
+</div>
+

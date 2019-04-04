@@ -1,12 +1,18 @@
 {
   "name": "gridmanager-element-skin",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "gridmanager-skin for element",
   "main": "js/index.js",
   "scripts": {
     "start": "node server",
     "build": "webpack --config webpack-config.js"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/xtfan21/GridManager-element-skin.git"
+  },
+  "homepage": "https://github.com/xtfan21/GridManager-element-skin",
+  "bugs": "https://github.com/xtfan21/GridManager-element-skin/issues",
   "author": "xiaotong",
   "license": "ISC",
   "keywords": [
@@ -15,7 +21,8 @@
     "table",
     "grid",
     "component",
-    "components"
+    "components",
+    "element-ui"
   ],
   "devDependencies": {
     "@babel/cli": "^7.0.0",
