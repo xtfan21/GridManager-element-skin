@@ -22,7 +22,7 @@ const demo1 = {
             dataKey: 'data',
             totalsKey: 'totals',
             ajax_data: function () {
-                return 'https://www.lovejavascript.com/blogManager/getBlogList';
+                return 'http://www.lovejavascript.com/blogManager/getBlogList';
             },
             ajax_type: 'POST',
             columnData: [

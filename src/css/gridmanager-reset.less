@@ -1,7 +1,6 @@
 .table-wrap.element-skin,
 .table-wrap.element-skin.icon-follow-text {
     font-family: 'Helvetica Neue,Helvetica,PingFang SC,Hiragino Sans GB,Microsoft YaHei,Arial,sans-serif';
-    border: none;
     .table-div table[grid-manager] {
         thead[grid-manager-mock-thead] {
             background: #fff;
@@ -21,9 +20,6 @@
         }
         tr {
             border-bottom: 1px solid #ebeef5;
-        }
-        td, th {
-            border-right: none;
         }
         tbody {
             tr:nth-child(odd) td {
@@ -167,19 +163,20 @@
         }
     }
 
-
     .gm-element-loading{
+        display: block;
         width: 100%;
-        height: calc(100% - 40px);
+        height: 100%;
         position: absolute;
         top: 0;
         left: 0;
+        z-index: 9;
         background-color: hsla(0,0%,100%,.9);
         transition: opacity .3s;
-
         .loader{
             &:before {
                 content: '';
+                z-index: 999;
                 display: block;
                 padding-top: 100%;
             }

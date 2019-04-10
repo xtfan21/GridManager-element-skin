@@ -15,6 +15,7 @@ skinClassName | 皮肤样式所使用的className | - | element-skin |
 emptyTemplate | 数据为空时自定义html模版 | - | - |
 ajaxPageTemplate | 页脚自定义html模版 | - | - |
 
+
 ## 安装
 ```node
 npm install gridmanager-element-skin
@@ -24,3 +25,37 @@ npm install gridmanager-element-skin
 ```
 import 'gridmanager-element-skin'
 ```
+
+## 配置后效果预览
+
+- 存在数据时：
+
+	- 原始配置效果：
+	![old.png](https://s2.ax1x.com/2019/04/09/AINlin.png)
+
+	- 本项目配置效果：
+	![new.png](https://s2.ax1x.com/2019/04/09/AIdTQx.png)
+
+- 无数据时:
+
+    - 原始配置效果：
+    ![oldEmpty.png](https://s2.ax1x.com/2019/04/09/AINUZ4.png)
+
+    - 本项目配置效果:
+    ![newEmpty.png](https://s2.ax1x.com/2019/04/09/AIdvYd.png)
+
+- 加载中loading:
+
+    - 原始配置效果:
+    ![oldLoading.png](https://s2.ax1x.com/2019/04/09/AINWod.png)
+
+    - 本项目配置效果:
+    ![newLoading.png](https://s2.ax1x.com/2019/04/09/AIwCOf.png)
+    
+
+
+## 反馈
+> 如有疑问，可提issue(https://github.com/xtfan21/GridManager-element-skin/issues)
+
+
+
