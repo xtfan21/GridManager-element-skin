@@ -1,5 +1,8 @@
 # GridManager-element-skin
 
+## v0.0.7
+
+- 配合GridManager组件功能升级
 
 ## v0.0.5
 
