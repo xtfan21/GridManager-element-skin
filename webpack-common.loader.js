@@ -1,4 +1,5 @@
 const path = require('path');
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 module.exports = (srcCodeDir, idDev) => {
     return [
@@ -23,7 +24,7 @@ module.exports = (srcCodeDir, idDev) => {
             test: /\.(le|c)ss/,
             use: [
                 {
-                    loader: 'style-loader'
+                    loader: idDev ? 'style-loader' : MiniCssExtractPlugin.loader
                 },
                 {
                     loader: 'css-loader',
