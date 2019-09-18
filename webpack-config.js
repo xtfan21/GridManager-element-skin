@@ -5,8 +5,6 @@ const genRules = require('./webpack-common.loader');
 const buildPath = path.join(__dirname, "dist");
 const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
-const MiniCssExtractPlugin = require('mini-css-extract-plugin');
-const OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin');
 
 const config = {
     mode: 'production',
@@ -37,17 +35,6 @@ const config = {
                     sourceMap: true,
                     warnings: false
                 }
-            }),
-
-            // 压缩css
-            new OptimizeCssAssetsPlugin({
-                assetNameRegExp: /\.css$/g,
-                cssProcessor: require('cssnano'),
-                cssProcessorOptions: {
-                    discardComments: {removeAll: true},
-                    minifyGradients: true
-                },
-                canPrint: true
             })
         ]
     },
@@ -56,12 +43,6 @@ const config = {
 	plugins: [
 		// 删除dist目录
 		new CleanWebpackPlugin(),
-
-        // 将样式文件 抽取至独立文件内
-        new MiniCssExtractPlugin({
-            filename: '[hash:20].css',
-            chunkFilename: '[id].css'
-        }),
 
 		// 将文件复制到构建目录
 		// CopyWebpackPlugin-> https://github.com/webpack-contrib/copy-webpack-plugin

@@ -21,6 +21,7 @@ const demo1 = {
             height: '100%',
             dataKey: 'data',
             totalsKey: 'totals',
+            disableCache: false,  // 用户记忆开启
             ajax_data: function () {
                 return 'http://www.lovejavascript.com/blogManager/getBlogList';
             },
@@ -137,5 +138,71 @@ const demo1 = {
         })
     }
 };
+
 demo1.initGM(table);
+
+// 初始化实例
+const gridInit = document.querySelector('.grid-init');
+gridInit.onclick = function() {
+    console.log('初始化实例');
+};
+
+// 获取表格版本信息
+const gridVersion = document.querySelector('.grid-version');
+gridVersion.onclick = function() {
+    console.log(table.GM('version'));
+};
+
+const gridName = document.querySelector('.grid-name');
+gridName.onclick = function() {
+    console.log('22');
+};
+
+// 清除数据
+const clearData = document.querySelector('.grid-cleardata');
+clearData.onclick = function() {
+    console.log(table.GM('cleanData'));
+};
+
+// 刷新数据
+const refreshData = document.querySelector('.grid-refresh');
+refreshData.onclick = function() {
+    console.log(table.GM('refreshGrid'));
+};
+
+// 获取表格所有信息
+const gridInfo = document.querySelector('.grid-info');
+gridInfo.onclick = function() {
+    console.log(table.GM('get'))
+};
+
+// 获取表格记忆信息
+const gridMemoryInfo = document.querySelector('.grid-memory-info');
+gridMemoryInfo.onclick = function() {
+    console.log(table.GM('getLocalStorage'));
+};
+
+// 清除记忆
+const clearMemory = document.querySelector('.grid-clear-memory');
+clearMemory.onclick = function() {
+    console.log(table.GM('clear'));
+};
+
+// 获取选中数据
+const checkedData = document.querySelector('.grid-checked-data');
+checkedData.onclick = function() {
+    console.log(table.GM('getCheckedData'));
+};
+
+// 导出数据
+const exportData = document.querySelector('.grid-export');
+exportData.onclick = function() {
+    console.log(table.GM('exportGridToXls', 'export', true))
+};
+
+// 销毁实例
+const destoryData = document.querySelector('.grid-destroy');
+destoryData.onclick = function () {
+    console.log(table.GM('destroy'));
+};
 

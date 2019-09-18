@@ -4,8 +4,20 @@ html, body{
     padding: 0;
 }
 .grid-main {
-    height: calc(100vh);
+    height: calc(100vh - 50px);
 }
+.operate-main {
+    height: 50px;
+    background: #d5d5d5;
+    text-align: center;
+    line-height: 50px;
+}
+.operate-main button {
+    padding: 4px 8px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
 .plugin-action{
     display: inline-block;
     color: steelblue;
@@ -15,3 +27,4 @@ html, body{
 .plugin-action:hover{
     text-decoration:underline;
 }
+
