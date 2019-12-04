@@ -1,11 +1,10 @@
-.table-wrap.element-skin,
-.table-wrap.element-skin.icon-follow-text {
+.table-wrap.element-skin {
     font-family: 'Helvetica Neue,Helvetica,PingFang SC,Hiragino Sans GB,Microsoft YaHei,Arial,sans-serif';
     .table-header{
         background-color: #F1F1F1;
         background-image: none;
     }
-    .table-div table[grid-manager] {
+    [grid-manager] {
         thead[grid-manager-mock-thead] {
             background: #fff;
             color: #909399;
@@ -105,15 +104,15 @@
         }
     }
 
-    .footer-toolbar {
+    .gm-toolbar {
         background: none;
         padding: 5px;
-        .ajax-page {
+        .pagination {
             right: 130px;
             top: 5px;
             line-height: 30px;
-            .pagination {
-                li {
+            > ul {
+                > li {
                     height: 28px;
                     line-height: 28px;
                     margin: 0 5px;
@@ -166,6 +165,7 @@
                 .gm-dropdown-list {
                     width: 60px;
                     left: -1px;
+                    border-radius: 3px 3px 0 0;
                     li {
                         height: 34px;
                         line-height: 34px;
