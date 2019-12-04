@@ -1,5 +1,9 @@
 # GridManager-element-skin
 
+## v0.0.11
+
+- 由于GridManager更新了部分样式权重, 所以对皮肤进行了更新，样式及demo微调
+
 ## v0.0.10
 
 - 配合表格组件，删除该组件中的loading动画；
