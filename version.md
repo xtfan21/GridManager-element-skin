@@ -1,5 +1,9 @@
 # GridManager-element-skin
 
+## v0.0.12
+
+- 去除isIconFollowText配置项
+
 ## v0.0.11
 
 - 由于GridManager更新了部分样式权重, 所以对皮肤进行了更新，样式及demo微调
