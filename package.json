@@ -1,6 +1,6 @@
 {
   "name": "gridmanager-element-skin",
-  "version": "0.0.12",
+  "version": "0.0.13",
   "description": "gridmanager-skin for element",
   "main": "js/index.js",
   "scripts": {
@@ -38,7 +38,7 @@
     "copy-webpack-plugin": "^4.5.0",
     "css-loader": "^0.28.10",
     "express": "^4.16.3",
-    "gridmanager": "^2.10.0",
+    "gridmanager": "^2.10.2",
     "html-loader": "^0.5.5",
     "less": "^3.8.1",
     "less-loader": "^4.1.0",

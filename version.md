@@ -1,5 +1,9 @@
 # GridManager-element-skin
 
+## v0.0.13
+
+- 表格列过多，修复样式错乱问题
+
 ## v0.0.12
 
 - 去除isIconFollowText配置项

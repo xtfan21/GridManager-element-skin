@@ -1,26 +1,36 @@
 .table-wrap.element-skin {
     font-family: 'Helvetica Neue,Helvetica,PingFang SC,Hiragino Sans GB,Microsoft YaHei,Arial,sans-serif';
     .table-header{
-        background-color: #F1F1F1;
+        background-color: #fff;
         background-image: none;
     }
     [grid-manager] {
-        thead[grid-manager-mock-thead] {
-            background: #fff;
-            color: #909399;
-            font-weight: bold;
-            font-size: 14px;
-            tr {
-                height: 48px;
-                line-height: 48px;
-            }
-
-        }
-        thead[grid-manager-thead] {
-            tr {
-                height: 48px;
-                line-height: 48px;
-                border-bottom: 1px solid #ebeef5;
+        thead tr{
+            height: 48px;
+            th {
+                color: #909399;
+                font-weight: bold;
+                font-size: 14px;
+                .sorting-action {
+                    color: #909399;
+                    &.sorting-up {
+                        .sa-up {
+                            color: #409eff;
+                        }
+                        .sa-down {
+                            opacity: 0.7;
+                        }
+                    }
+                    &.sorting-down {
+                        .sa-up {
+                            opacity: 0.7;
+                            color: #909399;
+                        }
+                        .sa-down {
+                            color: #409eff;
+                        }
+                    }
+                }
             }
         }
         tr {
@@ -68,29 +78,7 @@
                 }
             }
         }
-        th {
-            font-weight: bold;
-            .sorting-action {
-                color: #909399;
-                &.sorting-up {
-                    .sa-up {
-                        color: #409eff;
-                    }
-                    .sa-down {
-                        opacity: 0.7;
-                    }
-                }
-                &.sorting-down {
-                    .sa-up {
-                        opacity: 0.7;
-                        color: #909399;
-                    }
-                    .sa-down {
-                        color: #409eff;
-                    }
-                }
-            }
-        }
+
         .th-wrap {
             .direction-left {
                 border: 1px solid #ebeef5;
