@@ -143,6 +143,12 @@
             color: #606266;
             margin-right: 10px;
         }
+        /* 无总页模式不显示总条数 */
+        &[no-totals-mode="true"] {
+            .totals-count {
+                display: none;
+            }
+        }
         .change-size {
             width: 80px;
             height: 28px;

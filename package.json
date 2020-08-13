@@ -1,6 +1,6 @@
 {
   "name": "gridmanager-element-skin",
-  "version": "0.0.13",
+  "version": "0.0.14",
   "description": "gridmanager-skin for element",
   "main": "js/index.js",
   "scripts": {

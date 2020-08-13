@@ -25,10 +25,10 @@ const arg = {
     dataKey: 'data',
     totalsKey: 'totals',
     disableCache: false,  // 用户记忆开启
-    ajax_data: function () {
-        return 'http://www.lovejavascript.com/blogManager/getBlogList';
+    ajaxData: function () {
+        return 'https://www.lovejavascript.com/blogManager/getBlogList';
     },
-    ajax_type: 'POST',
+    ajaxType: 'POST',
     columnData: [
         {
             key: 'pic',
